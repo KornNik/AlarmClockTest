@@ -42,7 +42,6 @@ namespace Behaviours
         }
         private IEnumerator URLRequestTime(string url, bool isInvokeOnEnd)
         {
-            Debug.Log("EnterTimeRequest");
             using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
             {
                 yield return webRequest.SendWebRequest();
@@ -67,8 +66,6 @@ namespace Behaviours
                             DateTimeTimeApi dateTime = JsonUtility.FromJson<DateTimeTimeApi>(webRequest.downloadHandler.text);
                             _localDateTime = ParseToDateTime(dateTime);
                         }
-                        Debug.Log(webRequest.downloadHandler.text);
-                        Debug.Log(_localDateTime);
                         if (isInvokeOnEnd) { TimeReceived?.Invoke(_localDateTime); }
                         break;
                 }
@@ -77,7 +74,7 @@ namespace Behaviours
         private DateTime ParseToDateTime(string value)
         {
             long time = long.Parse(value);
-            return DateTime.Parse(string.Format("{0}", time));
+            return DateTime.FromFileTime(time);
         }
         private DateTime ParseToDateTime(DateTimeTimeApi dateTime)
         {

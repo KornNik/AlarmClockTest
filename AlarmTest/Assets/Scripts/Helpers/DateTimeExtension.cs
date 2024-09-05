@@ -1,34 +1,16 @@
 ﻿using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Helpers.Extensions
 {
     static class DateTimeExtension
     {
-        public const int SECONDS_IN_DAY = 86400;
+        public const int SECONDS_IN_DAY = 86400; //24*60*60
         public const int DEGREES_IN_HOUR = 30;  // 360/12 in hour.
         public const int DEGREES_IN_MINUTE = 6;    // 360/60 in minute.
         public const int DEGREES_IN_SECOND = 6;   // 360/60 in second.
 
-        public static bool IsDayPastBetweenTwoDates(DateTime lastRequested, DateTime current)
-        {
-            if (lastRequested.Year < current.Year || lastRequested.Month < current.Month)
-            {
-                return true;
-            }
-            else if (lastRequested.Day + 1 < current.Day)
-            {
-                return true;
-            }
-            else if (lastRequested.Day < current.Day)
-            {
-                if (lastRequested.Hour <= current.Hour)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
         public static string FromDoubleToString(double timeInSeconds)
         {
             var secondsToTime = TimeSpan.FromSeconds(timeInSeconds);
@@ -44,28 +26,40 @@ namespace Helpers.Extensions
             }
             return time;
         }
-        public static int PastTimeInSeconds(DateTime lastRequested, DateTime current)
+        public static bool IsTimeEqualHands(TimeSpan firstTime, TimeSpan secondTime)
         {
-            var lastRequestedTime = new TimeSpan(lastRequested.Hour, lastRequested.Minute, lastRequested.Second);
-            var currentTime = new TimeSpan(current.Hour, current.Minute, current.Second);
+            var substruct = firstTime.Subtract(secondTime);
 
-            int difference;
-            int remainingTime;
-
-            if (lastRequested.Day < current.Day)
+            if (substruct.Hours == -12 ||substruct.Hours == 12 && substruct.Minutes == 0)
             {
-                var lastDifferenceSeconds = SECONDS_IN_DAY - lastRequestedTime.TotalSeconds;
-                var currentTimeSeconds = currentTime.TotalSeconds;
-                difference = (int)(lastDifferenceSeconds + currentTimeSeconds);
-                remainingTime = SECONDS_IN_DAY - difference;
+                return true;
             }
-            else
-            {
-                difference = (int)(currentTime.TotalSeconds - lastRequestedTime.TotalSeconds);
-                remainingTime = SECONDS_IN_DAY - difference;
-            }
+            return false;
+        }
+        public static bool IsTimeEqualDigit(TimeSpan firstTime, TimeSpan secondTime)
+        {
+            var compair = TimeSpan.Compare(firstTime, secondTime);
 
-            return remainingTime;
+            if (compair < 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static TimeSpan HandsDegreesInTime(Vector3 hourEulerAngle, Vector3 minuteEulerAngle, Vector3 secondsEulerAngle)
+        {
+            TimeSpan alarmTime;
+            int alarmHour = (int)Mathf.Abs((hourEulerAngle.z - 360) / DEGREES_IN_HOUR);
+            int alarmMinute = (int)Mathf.Abs((minuteEulerAngle.z - 360) / DEGREES_IN_MINUTE);
+            int alarmSeconds = (int)Mathf.Abs((secondsEulerAngle.z - 360) / DEGREES_IN_SECOND);
+            alarmTime = new TimeSpan(alarmHour, alarmMinute, alarmSeconds);
+            return alarmTime;
+        }
+        public static TimeSpan EnterStringInTime(string enteredString)
+        {
+            TimeSpan alarmTime;
+            alarmTime = TimeSpan.Parse(enteredString);
+            return alarmTime;
         }
 
         public static int HourToSeconds(int hour)

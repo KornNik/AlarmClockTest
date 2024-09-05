@@ -1,15 +1,8 @@
 ﻿using Helpers;
-using System;
 using UnityEngine;
 
 namespace Data
 {
-    [Serializable]
-    struct ScreenAssetPath
-    {
-        public ScreenTypes Type;
-        public string Path;
-    }
     [CreateAssetMenu(fileName = "ResourcesBundle", menuName = "Data/Resources")]
     class GameObjectsResourcesBundle : ScriptableObject
     {
@@ -28,8 +21,6 @@ namespace Data
             }
             var fullPath = Helpers.Extensions.StringBuilderExtender.CreateString
                 (MAIN_PREFABS_FOLER_NAME, GUI_PREFABS_FOLDER_NAME, screenName);
-            Debug.Log(fullPath);
-
             return fullPath;
         }
         public string GetTimeControlPath()

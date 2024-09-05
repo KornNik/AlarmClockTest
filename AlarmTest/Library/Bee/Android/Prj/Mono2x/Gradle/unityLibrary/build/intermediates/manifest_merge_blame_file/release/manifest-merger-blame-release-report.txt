@@ -12,53 +12,53 @@
 10-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
 11
 12    <uses-feature android:glEsVersion="0x00030000" />
-12-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:3-52
-12-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:17-49
+12-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-52
+12-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:17-49
 13    <uses-feature
-13-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:3-91
+13-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-91
 14        android:name="android.hardware.vulkan.version"
-14-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:17-63
+14-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-63
 15        android:required="false" />
-15-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:64-88
+15-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:64-88
 16
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-65
-17-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:20-62
+17-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:3-65
+17-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:20-62
 18
 19    <uses-feature
-19-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-88
+19-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:3-88
 20        android:name="android.hardware.touchscreen"
-20-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-60
+20-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-60
 21        android:required="false" />
-21-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:61-85
+21-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:61-85
 22    <uses-feature
-22-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:3-99
+22-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:3-99
 23        android:name="android.hardware.touchscreen.multitouch"
-23-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:17-71
+23-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-71
 24        android:required="false" />
-24-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:72-96
+24-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:72-96
 25    <uses-feature
-25-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:3-108
+25-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-108
 26        android:name="android.hardware.touchscreen.multitouch.distinct"
-26-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-80
+26-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-80
 27        android:required="false" />
-27-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:81-105
+27-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:81-105
 28
 29    <application android:extractNativeLibs="true" >
-29-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-18:17
+29-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-20:17
 29-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
 30        <activity
-30-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
+30-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-13:16
 31            android:name="com.unity3d.player.UnityPlayerActivity"
 31-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
 32            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
 32-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:180-361
 33            android:hardwareAccelerated="false"
-33-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:397-432
+33-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:396-431
 34            android:launchMode="singleTask"
 34-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:148-179
-35            android:resizeableActivity="false"
-35-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:362-396
+35            android:resizeableActivity="true"
+35-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:362-395
 36            android:screenOrientation="fullUser"
 36-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-147
 37            android:theme="@style/UnityThemeSelector" >
@@ -81,49 +81,61 @@
 46                android:value="true" />
 46-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
 47            <meta-data
-47-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
-48                android:name="android.notch_support"
-48-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
-49                android:value="true" />
-49-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
-50        </activity>
-51
-52        <meta-data
-52-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
-53            android:name="unity.splash-mode"
-53-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
-54            android:value="0" />
-54-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
-55        <meta-data
-55-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
-56            android:name="unity.splash-enable"
-56-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
-57            android:value="True" />
-57-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+47-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-130
+48                android:name="WindowManagerPreference:FreeformWindowSize"
+48-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-75
+49                android:value="@string/FreeformWindowSize_maximize" />
+49-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:76-127
+50            <meta-data
+50-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:7-145
+51                android:name="WindowManagerPreference:FreeformWindowOrientation"
+51-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:18-82
+52                android:value="@string/FreeformWindowOrientation_landscape" />
+52-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:83-142
+53            <meta-data
+53-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:7-78
+54                android:name="android.notch_support"
+54-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:18-54
+55                android:value="true" />
+55-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:55-75
+56        </activity>
+57
 58        <meta-data
-58-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
-59            android:name="unity.launch-fullscreen"
-59-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
-60            android:value="True" />
-60-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+58-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-69
+59            android:name="unity.splash-mode"
+59-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-48
+60            android:value="0" />
+60-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:49-66
 61        <meta-data
-61-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
-62            android:name="unity.allow-resizable-window"
-62-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
-63            android:value="False" />
-63-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+61-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-74
+62            android:name="unity.splash-enable"
+62-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-50
+63            android:value="True" />
+63-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:51-71
 64        <meta-data
-64-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
-65            android:name="notch.config"
-65-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
-66            android:value="portrait|landscape" />
-66-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+64-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-78
+65            android:name="unity.launch-fullscreen"
+65-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-54
+66            android:value="True" />
+66-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:55-75
 67        <meta-data
-67-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-84
-68            android:name="unity.auto-report-fully-drawn"
-68-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-60
-69            android:value="true" />
-69-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:61-81
-70    </application>
-71
-72</manifest>
+67-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-83
+68            android:name="unity.allow-resizable-window"
+68-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-59
+69            android:value="True" />
+69-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:60-80
+70        <meta-data
+70-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-81
+71            android:name="notch.config"
+71-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-43
+72            android:value="portrait|landscape" />
+72-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:44-78
+73        <meta-data
+73-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-84
+74            android:name="unity.auto-report-fully-drawn"
+74-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:16-60
+75            android:value="true" />
+75-->D:\Work\GitPrograms\AlarmClockTest\AlarmTest\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:61-81
+76    </application>
+77
+78</manifest>

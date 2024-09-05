@@ -51,15 +51,7 @@ namespace Behaviours
 
         private void CheckUpdateTime(DateTime currentDateTime)
         {
-            if (_dateTime == currentDateTime)
-            {
-                return;
-            }
-            else
-            {
-                FreshTimerStart(currentDateTime);
-            }
-            StartTime();
+            FreshTimerStart(currentDateTime);
         }
 
         private void FreshTimerStart(DateTime currentDateTime)

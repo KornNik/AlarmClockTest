@@ -1,12 +1,13 @@
-﻿using Helpers.Observer;
+﻿using Helpers.Extensions;
+using Helpers.Observer;
 using System;
-using UnityEngine;
 
 namespace Behaviours
 {
-    sealed class AlarmClock : IClock, IEventListener<AlarmEvent>, IEventListener<TimeEvent>
+    sealed class AlarmClock : IEventListener<AlarmEvent>, IEventListener<TimeEvent>, IEventListener<AlarmEnterEvent>
     {
         private TimeSpan _alarmTime;
+        private AlarmEnterType _alarmEnterType = default;
 
         private bool _isAlarmSet;
 
@@ -14,11 +15,13 @@ namespace Behaviours
         {
             this.EventStartListening<AlarmEvent>();
             this.EventStartListening<TimeEvent>();
+            this.EventStartListening<AlarmEnterEvent>();
         }
         ~AlarmClock()
         {
             this.EventStopListening<AlarmEvent>();
             this.EventStopListening<TimeEvent>();
+            this.EventStopListening<AlarmEnterEvent>();
         }
 
         public void StartTime()
@@ -43,13 +46,28 @@ namespace Behaviours
         {
             if (_isAlarmSet)
             {
-                var substruct = _alarmTime.Subtract(eventType.TimeValue);
-                if (substruct.Hours == -12|| substruct.Hours == 12 && substruct.Minutes == 0)
+                if (_alarmEnterType == AlarmEnterType.Hands)
                 {
-                    AlarmEvent.Trigger(AlarmEventType.ActivateAlarm);
-                    StopTime();
+                    if (DateTimeExtension.IsTimeEqualHands(_alarmTime, eventType.TimeValue))
+                    {
+                        AlarmEvent.Trigger(AlarmEventType.ActivateAlarm);
+                        StopTime();
+                    }
+                }
+                else if (_alarmEnterType == AlarmEnterType.Digits)
+                {
+                    if (DateTimeExtension.IsTimeEqualDigit(_alarmTime, eventType.TimeValue))
+                    {
+                        AlarmEvent.Trigger(AlarmEventType.ActivateAlarm);
+                        StopTime();
+                    }
                 }
             }
+        }
+
+        public void OnEventTrigger(AlarmEnterEvent eventType)
+        {
+            _alarmEnterType = eventType.EventType;
         }
     }
 }

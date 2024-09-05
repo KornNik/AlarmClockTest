@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - GameUI.ClockMenu
     - GameUI.HandsMover
     - GameUI.TimeUI
+    - GameUI.TimerTextExtension
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -98,51 +99,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16038}
     - Class: 114
-      Script: {instanceID: 16084}
+      Script: {instanceID: 16040}
     - Class: 114
-      Script: {instanceID: 16214}
+      Script: {instanceID: 16088}
     - Class: 114
-      Script: {instanceID: 16682}
+      Script: {instanceID: 16098}
     - Class: 114
-      Script: {instanceID: 16910}
+      Script: {instanceID: 16220}
     - Class: 114
-      Script: {instanceID: 17114}
+      Script: {instanceID: 16690}
     - Class: 114
-      Script: {instanceID: 17324}
+      Script: {instanceID: 16918}
     - Class: 114
-      Script: {instanceID: 17414}
+      Script: {instanceID: 17122}
     - Class: 114
-      Script: {instanceID: 17636}
+      Script: {instanceID: 17332}
     - Class: 114
-      Script: {instanceID: 18662}
+      Script: {instanceID: 17422}
     - Class: 114
-      Script: {instanceID: 18676}
+      Script: {instanceID: 17808}
     - Class: 114
-      Script: {instanceID: 18946}
+      Script: {instanceID: 18672}
     - Class: 114
-      Script: {instanceID: 19184}
+      Script: {instanceID: 18686}
     - Class: 114
-      Script: {instanceID: 19468}
+      Script: {instanceID: 18958}
     - Class: 114
-      Script: {instanceID: 19650}
+      Script: {instanceID: 19200}
     - Class: 114
-      Script: {instanceID: 20374}
+      Script: {instanceID: 19374}
     - Class: 114
-      Script: {instanceID: 20700}
+      Script: {instanceID: 19484}
     - Class: 114
-      Script: {instanceID: 21042}
+      Script: {instanceID: 19666}
     - Class: 114
-      Script: {instanceID: 21764}
+      Script: {instanceID: 20198}
     - Class: 114
-      Script: {instanceID: 21862}
+      Script: {instanceID: 20392}
     - Class: 114
-      Script: {instanceID: 22982}
+      Script: {instanceID: 20718}
     - Class: 114
-      Script: {instanceID: 22994}
+      Script: {instanceID: 21060}
     - Class: 114
-      Script: {instanceID: 23382}
+      Script: {instanceID: 21784}
     - Class: 114
-      Script: {instanceID: 26562}
+      Script: {instanceID: 21882}
+    - Class: 114
+      Script: {instanceID: 24176}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -168,6 +171,12 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
+      Hash: 8165edc0ea71078aadd02b6c3ce945a1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: c1058004017c4d95e55a1c77d955e000
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
@@ -178,6 +187,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 469ceab4475744c61cc44a799a82963d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Data
+    className: DataBundle
   - hash:
       serializedVersion: 2
       Hash: 719a1390f9eb856966a1aaab72041631
@@ -384,12 +399,6 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 8165edc0ea71078aadd02b6c3ce945a1
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: e767c4aa5ddc7228b6ca83da9aa0fba2
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -412,6 +421,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 5fe324fc7ca0f4613049d5d5e5221dd7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Data
+    className: GameObjectsResourcesBundle
   - hash:
       serializedVersion: 2
       Hash: 68587ea39bb503ea8d65053e93c31d06
@@ -612,6 +627,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 7cfa8dec0469d19c8a337e0bd923b8e9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GameUI
+    className: HandsMover
+  - hash:
+      serializedVersion: 2
       Hash: 448e6f32110a4aa172bc9932a9ea2ac5
     assemblyName: UniTask.dll
     namespaceName: Cysharp.Threading.Tasks.Triggers
@@ -718,6 +739,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 45143492e59c7a9ecbc92357dbf5e844
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Assets.Scripts
+    className: GameLoader
   - hash:
       serializedVersion: 2
       Hash: 206a5c9d773ef22bc5ed2f451cd7ffbf
@@ -912,7 +939,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: ecb49f61847d9ad245c8fdd89468cbb8
+      Hash: 38771e7a94eac8f94628c5228a0eebf4
     assemblyName: Assembly-CSharp.dll
     namespaceName: GameUI
     className: TimeUI
@@ -984,28 +1011,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 469ceab4475744c61cc44a799a82963d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Data
-    className: DataBundle
-  - hash:
-      serializedVersion: 2
-      Hash: 5fe324fc7ca0f4613049d5d5e5221dd7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Data
-    className: GameObjectsResourcesBundle
-  - hash:
-      serializedVersion: 2
-      Hash: 45143492e59c7a9ecbc92357dbf5e844
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Assets.Scripts
-    className: GameLoader
-  - hash:
-      serializedVersion: 2
-      Hash: 7cfa8dec0469d19c8a337e0bd923b8e9
+      Hash: 74eb1f88b099e6fae6c4734aadb88aac
     assemblyName: Assembly-CSharp.dll
     namespaceName: GameUI
-    className: HandsMover
+    className: TimerTextExtension
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
