@@ -7,7 +7,7 @@ using System;
 
 namespace Behaviours
 {
-    class ClockTime : IClock
+    class ClockTime : IClock, IEventSubscription
     {
         public const int TIMER_UPDATE_FREQUENCY_HOURS = 1;
 
@@ -16,7 +16,6 @@ namespace Behaviours
         private TimeSpan _timerUpdateFrequency;
         private TimeSpan _currentTime;
         private RealTimeRequester _timeRequester;
-        private MonoBehaviour _coroutineObjectReference;
 
         protected WaitForEndOfFrame _waitForEndOfFrame;
         protected UniTask _timeValidationWaitTask;
@@ -29,24 +28,14 @@ namespace Behaviours
         private float _timeValue;
         private bool _isTimeCanTick;
 
-        public ClockTime(MonoBehaviour monoBehaviour)
+        public ClockTime()
         {
-            _coroutineObjectReference = monoBehaviour;
-
             _timeRequester = new RealTimeRequester();
             _timerCancellationTokenSource = new CancellationTokenSource();
 
             _dateTime = default;
             _mainTime = default;
             _timerUpdateFrequency = new TimeSpan(TIMER_UPDATE_FREQUENCY_HOURS, 0,0);
-
-            _timeRequester.TimeReceived += CheckUpdateTime;
-
-            RequestTime();
-        }
-        ~ClockTime()
-        {
-            _timeRequester.TimeReceived -= CheckUpdateTime;
         }
 
         private void CheckUpdateTime(DateTime currentDateTime)
@@ -78,7 +67,7 @@ namespace Behaviours
         }
         public virtual void RequestTime()
         {
-            _timeRequester.GetCurrentTime(_coroutineObjectReference, RealTimeRequester.TIME_IO_API, isInvokeOnEnd:  true);
+            _timeRequester.GetCurrentTime(RealTimeRequester.TIME_IO_API, isInvokeOnEnd:  true);
         }
         public TimeSpan GetCurrentTime()
         {
@@ -112,6 +101,16 @@ namespace Behaviours
             }
             RequestTime();
             await UniTask.Yield();
+        }
+
+        public void Subscribe()
+        {
+            _timeRequester.TimeReceived += CheckUpdateTime;
+        }
+
+        public void Unsubscribe()
+        {
+            _timeRequester.TimeReceived -= CheckUpdateTime;
         }
     }
 }

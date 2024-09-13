@@ -1,5 +1,5 @@
+using Cysharp.Threading.Tasks;
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -33,18 +33,19 @@ namespace Behaviours
         public const string TIME_IO_API = "https://www.timeapi.io/api/time/current/zone?timeZone=Europe%2FMoscow";
 
         private DateTime _localDateTime;
+        private UniTask _webRequestTask;
 
         public DateTime LocalDateTime => _localDateTime;
 
-        public void GetCurrentTime(MonoBehaviour couroutineHandler, string url, bool isInvokeOnEnd)
+        public void GetCurrentTime(string url, bool isInvokeOnEnd)
         {
-            couroutineHandler.StartCoroutine(URLRequestTime(url, isInvokeOnEnd));
+            _webRequestTask = URLRequestTime(url, isInvokeOnEnd);
         }
-        private IEnumerator URLRequestTime(string url, bool isInvokeOnEnd)
+        private async UniTask URLRequestTime(string url, bool isInvokeOnEnd)
         {
             using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
             {
-                yield return webRequest.SendWebRequest();
+                await webRequest.SendWebRequest();
 
                 switch (webRequest.result)
                 {

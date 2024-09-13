@@ -4,7 +4,7 @@ using System;
 
 namespace Behaviours
 {
-    sealed class AlarmClock : IEventListener<AlarmEvent>, IEventListener<TimeEvent>, IEventListener<AlarmEnterEvent>
+    sealed class AlarmClock : IEventSubscription, IEventListener<AlarmEvent>, IEventListener<TimeEvent>, IEventListener<AlarmEnterEvent>
     {
         private TimeSpan _alarmTime;
         private AlarmEnterType _alarmEnterType = default;
@@ -13,15 +13,6 @@ namespace Behaviours
 
         public AlarmClock()
         {
-            this.EventStartListening<AlarmEvent>();
-            this.EventStartListening<TimeEvent>();
-            this.EventStartListening<AlarmEnterEvent>();
-        }
-        ~AlarmClock()
-        {
-            this.EventStopListening<AlarmEvent>();
-            this.EventStopListening<TimeEvent>();
-            this.EventStopListening<AlarmEnterEvent>();
         }
 
         public void StartTime()
@@ -31,6 +22,20 @@ namespace Behaviours
         public void StopTime()
         {
             _isAlarmSet = false;
+        }
+
+        public void Subscribe()
+        {
+            this.EventStartListening<AlarmEvent>();
+            this.EventStartListening<TimeEvent>();
+            this.EventStartListening<AlarmEnterEvent>();
+        }
+
+        public void Unsubscribe()
+        {
+            this.EventStopListening<AlarmEvent>();
+            this.EventStopListening<TimeEvent>();
+            this.EventStopListening<AlarmEnterEvent>();
         }
 
         public void OnEventTrigger(AlarmEvent eventType)
